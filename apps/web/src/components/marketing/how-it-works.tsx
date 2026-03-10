@@ -1,5 +1,4 @@
-import { Bell, Globe, Monitor, ArrowRight } from "lucide-react";
-import { cn } from "@openstatus/ui/lib/utils";
+import { ArrowRight, Bell, Globe, Monitor } from "lucide-react";
 
 const steps = [
   {
@@ -27,10 +26,10 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section className="w-full bg-muted/50 py-16 md:py-24">
-      <div className="mx-auto max-w-6xl px-4 md:px-6">
+    <section className="not-prose -mx-4 my-12 w-[calc(100%+2rem)] bg-muted/50 py-12 md:py-16">
+      <div className="mx-auto max-w-5xl px-4">
         {/* Header */}
-        <div className="mb-12 flex flex-col items-center text-center md:mb-16">
+        <div className="mb-10 flex flex-col items-center text-center md:mb-12">
           <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
             How it works
           </h2>
@@ -43,7 +42,7 @@ export function HowItWorks() {
         <div className="relative grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-6">
           {/* Connecting line for desktop */}
           <div
-            className="absolute top-16 hidden h-px w-full border-t-2 border-dashed border-border md:block"
+            className="absolute left-[16.67%] right-[16.67%] top-[4.5rem] hidden border-t-2 border-dashed border-border md:block"
             aria-hidden="true"
           />
 
